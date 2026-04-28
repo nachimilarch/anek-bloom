@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, MessageCircle, Sparkles, Award, Heart } from "lucide-react";
+import vidyaImg from "@/assets/vidya-portrait.jpg";
 
 export const Hero = () => {
   return (
@@ -83,7 +84,7 @@ export const Hero = () => {
               <div className="absolute -inset-4 bg-gradient-rose rounded-[3rem] blur-2xl opacity-30" />
               <div className="relative rounded-[2.5rem] overflow-hidden shadow-elegant border border-card bg-gradient-card p-2">
                 <img
-                  src="/src/assets/vidya-portrait.jpg"
+                  src={vidyaImg}
                   alt="Dr. Vidya Malve, founder of Anek Learning Solutions"
                   className="w-full h-[560px] object-cover rounded-[2rem]"
                   width={896}
