@@ -43,8 +43,8 @@ const services = [
   },
   {
     icon: Pill,
-    title: "Pharma & Medicine Communication",
-    desc: "Specialised English for medical professionals, MRs and pharma support roles.",
+    title: "Pharma & Medical Training",
+    desc: "Product knowledge, domain induction and English communication for MRs, medical reps, and pharma support teams — bridging clinical knowledge with confident customer-facing skills.",
     gradient: "linear-gradient(135deg, hsl(14 80% 90%) 0%, hsl(14 75% 74%) 100%)",
     iconBg: "linear-gradient(135deg, hsl(14 75% 52%) 0%, hsl(14 70% 38%) 100%)",
     tag: "coral",
@@ -53,7 +53,7 @@ const services = [
   {
     icon: PenLine,
     title: "Content Creation & Writing",
-    desc: "Train your voice for blogs, scripts, social media and brand storytelling.",
+    desc: "Train your voice for blogs, scripts, media and brand storytelling.",
     gradient: "linear-gradient(135deg, hsl(38 90% 90%) 0%, hsl(38 85% 74%) 100%)",
     iconBg: "linear-gradient(135deg, hsl(38 85% 48%) 0%, hsl(38 80% 35%) 100%)",
     tag: "amber",

@@ -7,8 +7,12 @@ export const Footer = () => {
         <div className="grid md:grid-cols-4 gap-10 mb-12">
           <div className="md:col-span-2">
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 rounded-full bg-gradient-rose flex items-center justify-center">
-                <Sparkles className="w-5 h-5 text-primary-foreground" />
+              <div className="flex flex-col items-start gap-2 mb-4">
+                <img
+                  src="/og-image.png"
+                  alt="Anek Learning Solutions"
+                  className="h-32 w-auto object-contain rounded-xl bg-white/10 p-2"
+                />
               </div>
               <div>
                 <div className="font-serif text-xl font-semibold text-background">Anek Learning Solutions</div>

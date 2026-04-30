@@ -32,14 +32,12 @@ export const Header = () => {
       }`}
     >
       <div className="container flex items-center justify-between h-20">
-        <a href="#home" className="flex items-center gap-2 group">
-          <div className="w-10 h-10 rounded-full bg-gradient-rose flex items-center justify-center shadow-soft group-hover:shadow-glow transition-smooth">
-            <Sparkles className="w-5 h-5 text-primary-foreground" />
-          </div>
-          <div className="leading-tight">
-            <div className="font-serif text-xl font-semibold text-foreground">Anek</div>
-            <div className="text-[10px] tracking-[0.2em] uppercase text-muted-foreground">Learning Solutions</div>
-          </div>
+        <a href="#home" className="flex items-center shrink-0">
+          <img
+            src="/og-image.png"
+            alt="Anek Learning Solutions"
+            className="h-20 w-auto object-contain"
+          />
         </a>
 
         <nav className="hidden lg:flex items-center gap-8">
