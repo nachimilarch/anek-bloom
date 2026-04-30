@@ -6,61 +6,98 @@
 
 @layer base {
   :root {
-    /* Core feminine medical palette */
-    --background: 30 40% 99%;
-    --foreground: 340 20% 18%;
+    --background: 30 40% 97%;
+    --foreground: 340 20% 14%;
 
     --card: 0 0% 100%;
-    --card-foreground: 340 20% 18%;
+    --card-foreground: 340 20% 14%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 340 20% 18%;
+    --popover-foreground: 340 20% 14%;
 
     /* Blush rose primary */
-    --primary: 345 55% 58%;
+    --primary: 345 55% 52%;
     --primary-foreground: 0 0% 100%;
-    --primary-soft: 345 70% 92%;
-    --primary-glow: 345 80% 78%;
+    --primary-soft: 345 70% 88%;
+    --primary-glow: 345 80% 70%;
 
     /* Muted lavender secondary */
-    --secondary: 280 30% 94%;
-    --secondary-foreground: 280 30% 30%;
+    --secondary: 280 30% 88%;
+    --secondary-foreground: 280 30% 28%;
 
     /* Medical blue accent */
-    --accent: 205 60% 92%;
-    --accent-foreground: 205 70% 30%;
-    --medical-blue: 205 65% 55%;
+    --accent: 205 60% 86%;
+    --accent-foreground: 205 70% 28%;
+    --medical-blue: 205 65% 48%;
 
-    --muted: 340 20% 96%;
-    --muted-foreground: 340 10% 45%;
+    --muted: 340 20% 91%;
+    --muted-foreground: 340 10% 42%;
 
-    --blush: 350 80% 95%;
-    --rose: 345 60% 75%;
-    --lavender: 275 40% 88%;
-    --cream: 35 50% 97%;
+    /* Core palette */
+    --blush: 350 80% 89%;
+    --rose: 345 60% 67%;
+    --lavender: 275 40% 82%;
+    --cream: 35 50% 93%;
+
+    /* ✨ New palette extensions */
+    --teal: 174 55% 48%;
+    --teal-soft: 174 55% 90%;
+    --teal-dark: 174 55% 38%;
+
+    --amber: 38 90% 55%;
+    --amber-soft: 38 90% 92%;
+    --amber-dark: 38 80% 40%;
+
+    --coral: 14 80% 62%;
+    --coral-soft: 14 80% 92%;
+    --coral-dark: 14 70% 45%;
+
+    --indigo: 240 50% 58%;
+    --indigo-soft: 240 50% 92%;
+    --indigo-dark: 240 50% 38%;
+
+    --sage: 145 30% 55%;
+    --sage-soft: 145 30% 90%;
+    --sage-dark: 145 30% 38%;
+
+    --gold: 45 85% 52%;
+    --gold-soft: 45 85% 92%;
 
     --destructive: 0 75% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 340 25% 92%;
-    --input: 340 25% 92%;
-    --ring: 345 55% 58%;
+    --border: 340 25% 86%;
+    --input: 340 25% 86%;
+    --ring: 345 55% 52%;
 
     --radius: 1rem;
 
     /* Gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(350 80% 96%) 0%, hsl(280 50% 95%) 50%, hsl(205 60% 95%) 100%);
-    --gradient-blush: linear-gradient(135deg, hsl(350 80% 95%) 0%, hsl(345 70% 88%) 100%);
-    --gradient-rose: linear-gradient(135deg, hsl(345 70% 78%) 0%, hsl(345 55% 58%) 100%);
-    --gradient-soft: linear-gradient(180deg, hsl(30 40% 99%) 0%, hsl(350 60% 97%) 100%);
-    --gradient-card: linear-gradient(135deg, hsl(0 0% 100%) 0%, hsl(350 60% 98%) 100%);
-    --gradient-medical: linear-gradient(135deg, hsl(205 60% 95%) 0%, hsl(280 40% 94%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(350 80% 91%) 0%, hsl(280 50% 90%) 50%, hsl(205 60% 90%) 100%);
+    --gradient-blush: linear-gradient(135deg, hsl(350 80% 90%) 0%, hsl(345 70% 82%) 100%);
+    --gradient-rose: linear-gradient(135deg, hsl(345 70% 70%) 0%, hsl(345 55% 52%) 100%);
+    --gradient-soft: linear-gradient(180deg, hsl(30 40% 97%) 0%, hsl(350 60% 92%) 100%);
+    --gradient-card: linear-gradient(135deg, hsl(0 0% 100%) 0%, hsl(350 60% 96%) 100%);
+    --gradient-medical: linear-gradient(135deg, hsl(205 60% 90%) 0%, hsl(280 40% 88%) 100%);
+    --gradient-teal: linear-gradient(135deg, hsl(174 55% 88%) 0%, hsl(174 55% 70%) 100%);
+    --gradient-amber: linear-gradient(135deg, hsl(38 90% 92%) 0%, hsl(38 90% 72%) 100%);
+    --gradient-coral: linear-gradient(135deg, hsl(14 80% 92%) 0%, hsl(14 80% 72%) 100%);
+    --gradient-indigo: linear-gradient(135deg, hsl(240 50% 92%) 0%, hsl(240 50% 75%) 100%);
+    --gradient-deep-rose: linear-gradient(135deg, hsl(345 55% 30%) 0%, hsl(280 38% 28%) 60%, hsl(205 50% 28%) 100%);
+    --gradient-services-bg: linear-gradient(160deg, hsl(280 40% 96%) 0%, hsl(205 50% 94%) 50%, hsl(174 40% 94%) 100%);
+    --gradient-whyus-bg: linear-gradient(160deg, hsl(38 80% 96%) 0%, hsl(345 60% 95%) 50%, hsl(280 40% 96%) 100%);
+    --gradient-testimonials-bg: linear-gradient(135deg, hsl(345 45% 22%) 0%, hsl(280 38% 20%) 60%, hsl(240 40% 22%) 100%);
+    --gradient-faq-bg: linear-gradient(160deg, hsl(38 60% 96%) 0%, hsl(45 80% 95%) 100%);
+    --gradient-cta-bg: linear-gradient(135deg, hsl(345 60% 40%) 0%, hsl(280 45% 35%) 50%, hsl(240 50% 35%) 100%);
 
     /* Shadows */
     --shadow-soft: 0 4px 20px -4px hsl(345 50% 70% / 0.15);
-    --shadow-elegant: 0 20px 50px -12px hsl(345 50% 60% / 0.18);
+    --shadow-elegant: 0 20px 50px -12px hsl(345 50% 60% / 0.20);
     --shadow-glow: 0 0 60px hsl(345 80% 80% / 0.4);
-    --shadow-card: 0 8px 30px -8px hsl(340 30% 60% / 0.12);
+    --shadow-card: 0 8px 30px -8px hsl(340 30% 60% / 0.14);
+    --shadow-teal: 0 8px 30px -8px hsl(174 55% 48% / 0.25);
+    --shadow-amber: 0 8px 30px -8px hsl(38 90% 55% / 0.25);
+    --shadow-coral: 0 8px 30px -8px hsl(14 80% 62% / 0.25);
 
     --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   }
@@ -70,28 +107,132 @@
   * {
     @apply border-border;
   }
+
   body {
     @apply bg-background text-foreground font-sans antialiased;
   }
-  h1, h2, h3, h4 {
+
+  h1,
+  h2,
+  h3,
+  h4 {
     @apply font-serif tracking-tight;
   }
 }
 
 @layer utilities {
-  .bg-gradient-hero { background: var(--gradient-hero); }
-  .bg-gradient-blush { background: var(--gradient-blush); }
-  .bg-gradient-rose { background: var(--gradient-rose); }
-  .bg-gradient-soft { background: var(--gradient-soft); }
-  .bg-gradient-card { background: var(--gradient-card); }
-  .bg-gradient-medical { background: var(--gradient-medical); }
-  .shadow-soft { box-shadow: var(--shadow-soft); }
-  .shadow-elegant { box-shadow: var(--shadow-elegant); }
-  .shadow-glow { box-shadow: var(--shadow-glow); }
-  .shadow-card { box-shadow: var(--shadow-card); }
-  .transition-smooth { transition: var(--transition-smooth); }
+  .bg-gradient-hero {
+    background: var(--gradient-hero);
+  }
+
+  .bg-gradient-blush {
+    background: var(--gradient-blush);
+  }
+
+  .bg-gradient-rose {
+    background: var(--gradient-rose);
+  }
+
+  .bg-gradient-soft {
+    background: var(--gradient-soft);
+  }
+
+  .bg-gradient-card {
+    background: var(--gradient-card);
+  }
+
+  .bg-gradient-medical {
+    background: var(--gradient-medical);
+  }
+
+  .bg-gradient-teal {
+    background: var(--gradient-teal);
+  }
+
+  .bg-gradient-amber {
+    background: var(--gradient-amber);
+  }
+
+  .bg-gradient-coral {
+    background: var(--gradient-coral);
+  }
+
+  .bg-gradient-indigo {
+    background: var(--gradient-indigo);
+  }
+
+  .bg-gradient-deep-rose {
+    background: var(--gradient-deep-rose);
+  }
+
+  .bg-gradient-services-bg {
+    background: var(--gradient-services-bg);
+  }
+
+  .bg-gradient-whyus-bg {
+    background: var(--gradient-whyus-bg);
+  }
+
+  .bg-gradient-testimonials-bg {
+    background: var(--gradient-testimonials-bg);
+  }
+
+  .bg-gradient-faq-bg {
+    background: var(--gradient-faq-bg);
+  }
+
+  .bg-gradient-cta-bg {
+    background: var(--gradient-cta-bg);
+  }
+
+  .shadow-soft {
+    box-shadow: var(--shadow-soft);
+  }
+
+  .shadow-elegant {
+    box-shadow: var(--shadow-elegant);
+  }
+
+  .shadow-glow {
+    box-shadow: var(--shadow-glow);
+  }
+
+  .shadow-card {
+    box-shadow: var(--shadow-card);
+  }
+
+  .shadow-teal {
+    box-shadow: var(--shadow-teal);
+  }
+
+  .shadow-amber {
+    box-shadow: var(--shadow-amber);
+  }
+
+  .shadow-coral {
+    box-shadow: var(--shadow-coral);
+  }
+
+  .transition-smooth {
+    transition: var(--transition-smooth);
+  }
+
   .text-gradient-rose {
     background: var(--gradient-rose);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .text-gradient-teal {
+    background: linear-gradient(135deg, hsl(174 55% 38%) 0%, hsl(174 55% 52%) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .text-gradient-amber {
+    background: linear-gradient(135deg, hsl(38 80% 40%) 0%, hsl(38 90% 55%) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
